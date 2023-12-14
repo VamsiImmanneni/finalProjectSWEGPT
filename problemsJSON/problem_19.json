@@ -1,0 +1,30 @@
+{
+    "identifier": "function_19",
+    "description": "Vectorized equivalent of flattening a matrix into a 1D array.",
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Create the function's vectorized equivalent using NumPy.",
+            "input_code": "def function_19(A):\n    result = []\n    for i in range(len(A)):\n        for j in range(len(A[0])):\n            result.append(A[i][j])\n    return result\n"
+        }
+    ],
+    "function_prototype": {
+        "function_name": "function_19",
+        "parameters": [
+            {
+                "name": "A",
+                "type": "np.ndarray"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "np.ndarray"
+            }
+        ]
+    },
+    "tags": [
+        "Array",
+        "Flatten",
+        "Vectorization"
+    ]
+}

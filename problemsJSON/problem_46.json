@@ -1,0 +1,20 @@
+{
+    "identifier": "function_46",
+    "description": "Perform element-wise division of matrices A and B.",
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Create the function's vectorized equivalent using NumPy.",
+            "input_code": "def function_46(A, B):\n    if len(A) != len(A[0]):\n        return None \n    return np.linalg.det(A)"
+        }
+    ],
+    "function_prototype": {
+        "function_name": "function_46",
+        "parameters": [
+            {"name": "A", "type": "np.ndarray"},
+            {"name": "B", "type": "np.ndarray"}
+        ],
+        "return_values": [{"type": "np.ndarray"}]
+    },
+    "tags": ["Array", "Medium"]
+}

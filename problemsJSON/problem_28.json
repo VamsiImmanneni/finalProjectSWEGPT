@@ -1,0 +1,35 @@
+{
+    "identifier": "function_28",
+    "description": "Vectorized equivalent of matrix multiplication of A and B with added identity bias.",
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Create the function's vectorized equivalent using NumPy.",
+            "input_code": "def function_28(A, B):\n    n = len(A)\n    result = []\n    for i in range(n):\n        row = []\n        for j in range(n):\n            sum_product = 0\n            for k in range(n):\n                sum_product += A[i][k] * B[k][j] + (1 if k == j else 0)\n            row.append(sum_product)\n        result.append(row)\n    return result\n"
+        }
+    ],
+    "function_prototype": {
+        "function_name": "function_28",
+        "parameters": [
+            {
+                "name": "A",
+                "type": "np.ndarray"
+            },
+            {
+                "name": "B",
+                "type": "np.ndarray"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "np.ndarray"
+            }
+        ]
+    },
+    "tags": [
+        "Matrix",
+        "Multiplication",
+        "Identity",
+        "Vectorization"
+    ]
+}

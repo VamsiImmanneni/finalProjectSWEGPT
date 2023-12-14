@@ -1,0 +1,34 @@
+{
+    "identifier": "function_21",
+    "description": "Vectorized equivalent of matrix-vector multiplication with scaling effect.",
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Create the function's vectorized equivalent using NumPy.",
+            "input_code": "def function_21(A, B):\n    n = len(A)\n    m = len(B[0])\n    result = [1] * n\n    for i in range(n):\n        for j in range(m):\n            result[i] *= A[i][j] * B[j][0]\n    return result\n"
+        }
+    ],
+    "function_prototype": {
+        "function_name": "function_21",
+        "parameters": [
+            {
+                "name": "A",
+                "type": "np.ndarray"
+            },
+            {
+                "name": "B",
+                "type": "np.ndarray"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "np.ndarray"
+            }
+        ]
+    },
+    "tags": [
+        "Array",
+        "Matrix-Vector Multiplication",
+        "Vectorization"
+    ]
+}

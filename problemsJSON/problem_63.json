@@ -1,0 +1,32 @@
+{
+    "identifier": "function_63",
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Create the function's vectorized equivalent using NumPy."
+        }
+    ],
+    "function_prototype": {
+        "function_name": "function_63",
+        "parameters": [
+            {
+                "name": "A",
+                "type": "np.ndarray"
+            },
+            {
+                "name": "B",
+                "type": "np.ndarray"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "np.ndarray"
+            }
+        ]
+    },
+    "tags": [
+        "Matrix",
+        "Arithmetic",
+        "Vectorization"
+    ]
+}

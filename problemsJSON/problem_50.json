@@ -1,0 +1,19 @@
+{
+    "identifier": "function_50",
+    "description": "Multiply matrix A by a scalar value.",
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Create the function's vectorized equivalent using NumPy.",
+            "input_code": "def function_50(A):\n    scalar = 81\n    n = len(A)\n    result = [[0 for _ in range(n)] for _ in range(n)]\n    for i in range(n):\n        for j in range(n):\n            result[i][j] = A[i][j] * scalar\n    return result"
+        }
+    ],
+    "function_prototype": {
+        "function_name": "function_50",
+        "parameters": [
+            {"name": "A", "type": "np.ndarray"}
+        ],
+        "return_values": [{"type": "np.ndarray"}]
+    },
+    "tags": ["Array", "Medium"]
+}

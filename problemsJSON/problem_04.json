@@ -1,0 +1,29 @@
+{
+    "identifier": "function_04",
+    "description": "Vectorized equivalent of extracting the diagonal elements of a matrix.",
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Create the function's vectorized equivalent using NumPy.",
+            "input_code": "def function_04(A):\n    result = []\n    for i in range(len(A)):\n        result.append(A[i][i])\n    return result\n"
+        }
+    ],
+    "function_prototype": {
+        "function_name": "function_04",
+        "parameters": [
+            {
+                "name": "A",
+                "type": "np.ndarray"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "np.ndarray"
+            }
+        ]
+    },
+    "tags": [
+        "Array",
+        "Vectorization"
+    ]
+}

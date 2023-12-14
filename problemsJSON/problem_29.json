@@ -1,0 +1,34 @@
+{
+    "identifier": "function_29",
+    "description": "Vectorized equivalent of element-wise multiplication of A and B with addition of elements from A.",
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Create the function's vectorized equivalent using NumPy.",
+            "input_code": "def function_29(A, B):\n    n = len(A)\n    result = []\n    for i in range(n):\n        row = []\n        for j in range(n):\n            row.append(A[i][j] * B[i][j] + A[i][j])\n        result.append(row)\n    return result\n"
+        }
+    ],
+    "function_prototype": {
+        "function_name": "function_29",
+        "parameters": [
+            {
+                "name": "A",
+                "type": "np.ndarray"
+            },
+            {
+                "name": "B",
+                "type": "np.ndarray"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "np.ndarray"
+            }
+        ]
+    },
+    "tags": [
+        "Matrix",
+        "Element-wise Multiplication",
+        "Vectorization"
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "identifier": "function_34",
+    "description": "Vectorized equivalent of subtracting matrix B from A with a column offset in B.",
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Create the function's vectorized equivalent using NumPy.",
+            "input_code": "def function_34(A, B):\n    n = len(A)\n    result = []\n    for i in range(n):\n        row = []\n        for j in range(n):\n            offset_j = (j + 1) % n\n            row.append(A[i][j] - B[i][offset_j])\n        result.append(row)\n    return result\n"
+        }
+    ],
+    "function_prototype": {
+        "function_name": "function_34",
+        "parameters": [
+            {
+                "name": "A",
+                "type": "np.ndarray"
+            },
+            {
+                "name": "B",
+                "type": "np.ndarray"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "np.ndarray"
+            }
+        ]
+    },
+    "tags": [
+        "Matrix",
+        "Subtraction",
+        "Offset",
+        "Vectorization"
+    ]
+}

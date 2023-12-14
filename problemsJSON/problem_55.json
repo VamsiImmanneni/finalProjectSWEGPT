@@ -1,0 +1,20 @@
+{
+    "identifier": "function_55",
+    "description": "Find the maximum value of each row in matrices A and B.",
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Create the function's vectorized equivalent using NumPy.",
+            "input_code": "def function_55(A, B):\n    n = len(A)\n    result = [0 for _ in range(n)]\n    for j in range(n):\n        result[j] = sum(A[i][j] for i in range(n))\n    return result"
+        }
+    ],
+    "function_prototype": {
+        "function_name": "function_55",
+        "parameters": [
+            {"name": "A", "type": "np.ndarray"},
+            {"name": "B", "type": "np.ndarray"}
+        ],
+        "return_values": [{"type": "np.ndarray"}]
+    },
+    "tags": ["Array", "Medium"]
+}

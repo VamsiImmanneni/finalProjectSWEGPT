@@ -1,0 +1,7 @@
+{
+    "name": "Vectorization Evaluation",
+    "model": "gpt-3.5-turbo-instruct-0914",
+    "run_test": "python3 generate.py",
+    "run_score": "python3 run_tests.py",
+    "tags": ["Vectorization", "OpenAI", "Evaluation"]
+}

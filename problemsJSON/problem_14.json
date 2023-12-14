@@ -1,0 +1,30 @@
+{
+    "identifier": "function_14",
+    "description": "Vectorized equivalent of finding the minimum value in each row of a matrix.",
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Create the function's vectorized equivalent using NumPy.",
+            "input_code": "def function_14(A):\n    result = [float('inf')] * len(A)\n    for i in range(len(A)):\n        for j in range(len(A[0])):\n            if A[i][j] < result[i]:\n                result[i] = A[i][j]\n    return result\n"
+        }
+    ],
+    "function_prototype": {
+        "function_name": "function_14",
+        "parameters": [
+            {
+                "name": "A",
+                "type": "np.ndarray"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "np.ndarray"
+            }
+        ]
+    },
+    "tags": [
+        "Array",
+        "Minimum Value",
+        "Vectorization"
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "identifier": "function_39",
+    "description": "Vectorized equivalent of calculating element-wise power of A to B, applying a modulo based on B.",
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Create the function's vectorized equivalent using NumPy.",
+            "input_code": "def function_39(A, B):\n    n = len(A)\n    result = []\n    for i in range(n):\n        row = []\n        for j in range(n):\n            power = int(B[i][j])\n            row.append((A[i][j] ** power) % (power + 1))\n        result.append(row)\n    return result\n"
+        }
+    ],
+    "function_prototype": {
+        "function_name": "function_39",
+        "parameters": [
+            {
+                "name": "A",
+                "type": "np.ndarray"
+            },
+            {
+                "name": "B",
+                "type": "np.ndarray"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "np.ndarray"
+            }
+        ]
+    },
+    "tags": [
+        "Matrix",
+        "Element-wise Power",
+        "Modulo",
+        "Vectorization"
+    ]
+}

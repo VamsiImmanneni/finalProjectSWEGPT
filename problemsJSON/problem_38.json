@@ -1,0 +1,35 @@
+{
+    "identifier": "function_38",
+    "description": "Vectorized check for square and non-empty matrices A and B.",
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Create the function's vectorized equivalent using NumPy.",
+            "input_code": "def function_38(A, B):\n    return len(A) == len(A[0]) and len(A) > 0 and len(B) == len(B[0]) and len(B) > 0\n"
+        }
+    ],
+    "function_prototype": {
+        "function_name": "function_38",
+        "parameters": [
+            {
+                "name": "A",
+                "type": "np.ndarray"
+            },
+            {
+                "name": "B",
+                "type": "np.ndarray"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "bool"
+            }
+        ]
+    },
+    "tags": [
+        "Matrix",
+        "Square Matrix",
+        "Non-empty Matrix",
+        "Vectorization"
+    ]
+}

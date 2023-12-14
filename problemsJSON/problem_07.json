@@ -1,0 +1,30 @@
+{
+    "identifier": "function_07",
+    "description": "Vectorized equivalent of calculating the row-wise mean of a matrix.",
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Create the function's vectorized equivalent using NumPy.",
+            "input_code": "def function_07(A):\n    result = [0] * len(A)\n    for i in range(len(A)):\n        for j in range(len(A[0])):\n            result[i] += A[i][j]\n        result[i] /= len(A[0])\n    return result\n"
+        }
+    ],
+    "function_prototype": {
+        "function_name": "function_07",
+        "parameters": [
+            {
+                "name": "A",
+                "type": "np.ndarray"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "np.ndarray"
+            }
+        ]
+    },
+    "tags": [
+        "Array",
+        "Vectorization",
+        "Mean"
+    ]
+}

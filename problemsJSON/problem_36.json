@@ -1,0 +1,35 @@
+{
+    "identifier": "function_36",
+    "description": "Vectorized equivalent of finding the maximum value in each column of A, excluding the first row.",
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Create the function's vectorized equivalent using NumPy.",
+            "input_code": "def function_36(A, B):\n    n = len(A)\n    result = []\n    for j in range(n):\n        max_val = float('-inf')\n        for i in range(1, n):\n            if A[i][j] > max_val:\n                max_val = A[i][j]\n        result.append(max_val)\n    return result\n"
+        }
+    ],
+    "function_prototype": {
+        "function_name": "function_36",
+        "parameters": [
+            {
+                "name": "A",
+                "type": "np.ndarray"
+            },
+            {
+                "name": "B",
+                "type": "np.ndarray"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "np.ndarray"
+            }
+        ]
+    },
+    "tags": [
+        "Matrix",
+        "Maximum Value",
+        "Exclusion",
+        "Vectorization"
+    ]
+}

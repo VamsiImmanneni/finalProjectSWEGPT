@@ -1,0 +1,35 @@
+{
+    "identifier": "function_37",
+    "description": "Vectorized equivalent of dividing elements of A by a scalar, decaying exponentially based on indices from B.",
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Create the function's vectorized equivalent using NumPy.",
+            "input_code": "def function_37(A, B):\n    n = len(A)\n    result = []\n    for i in range(n):\n        row = []\n        for j in range(n):\n            row.append(A[i][j] / (2 ** (B[i][j])))\n        result.append(row)\n    return result\n"
+        }
+    ],
+    "function_prototype": {
+        "function_name": "function_37",
+        "parameters": [
+            {
+                "name": "A",
+                "type": "np.ndarray"
+            },
+            {
+                "name": "B",
+                "type": "np.ndarray"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "np.ndarray"
+            }
+        ]
+    },
+    "tags": [
+        "Matrix",
+        "Division",
+        "Exponential Decay",
+        "Vectorization"
+    ]
+}

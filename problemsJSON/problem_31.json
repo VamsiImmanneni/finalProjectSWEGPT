@@ -1,0 +1,34 @@
+{
+    "identifier": "function_31",
+    "description": "Vectorized equivalent of calculating the column-wise mean of A, dividing by increasing values from B.",
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Create the function's vectorized equivalent using NumPy.",
+            "input_code": "def function_31(A, B):\n    n = len(A)\n    result = []\n    for j in range(n):\n        sum_col = 0\n        for i in range(n):\n            sum_col += A[i][j]\n        result.append(sum_col / (B[j][j] + 1))\n    return result\n"
+        }
+    ],
+    "function_prototype": {
+        "function_name": "function_31",
+        "parameters": [
+            {
+                "name": "A",
+                "type": "np.ndarray"
+            },
+            {
+                "name": "B",
+                "type": "np.ndarray"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "np.ndarray"
+            }
+        ]
+    },
+    "tags": [
+        "Matrix",
+        "Column-wise Mean",
+        "Vectorization"
+    ]
+}

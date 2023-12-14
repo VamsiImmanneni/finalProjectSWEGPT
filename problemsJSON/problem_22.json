@@ -1,0 +1,35 @@
+{
+    "identifier": "function_22",
+    "description": "Vectorized equivalent of transposing matrix A with inverted diagonal elements of B.",
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Create the function's vectorized equivalent using NumPy.",
+            "input_code": "def function_22(A, B):\n    n = len(A)\n    result = []\n    for i in range(n):\n        row = []\n        for j in range(n):\n            if i != j:\n                row.append(A[j][i])\n            else:\n                row.append(-B[i][j])\n        result.append(row)\n    return result\n"
+        }
+    ],
+    "function_prototype": {
+        "function_name": "function_22",
+        "parameters": [
+            {
+                "name": "A",
+                "type": "np.ndarray"
+            },
+            {
+                "name": "B",
+                "type": "np.ndarray"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "np.ndarray"
+            }
+        ]
+    },
+    "tags": [
+        "Array",
+        "Transpose",
+        "Inverted Diagonal",
+        "Vectorization"
+    ]
+}

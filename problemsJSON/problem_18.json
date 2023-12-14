@@ -1,0 +1,31 @@
+{
+    "identifier": "function_18",
+    "description": "Vectorized equivalent of counting negative elements in a matrix.",
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Create the function's vectorized equivalent using NumPy.",
+            "input_code": "def function_18(A):\n    count = 0\n    for i in range(len(A)):\n        for j in range(len(A[0])):\n            if A[i][j] < 0:\n                count += 1\n    return count\n"
+        }
+    ],
+    "function_prototype": {
+        "function_name": "function_18",
+        "parameters": [
+            {
+                "name": "A",
+                "type": "np.ndarray"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    },
+    "tags": [
+        "Array",
+        "Counting",
+        "Negative Elements",
+        "Vectorization"
+    ]
+}

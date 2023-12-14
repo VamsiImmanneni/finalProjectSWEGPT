@@ -1,0 +1,30 @@
+{
+    "identifier": "function_16",
+    "description": "Vectorized equivalent of negating all elements in a matrix.",
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Create the function's vectorized equivalent using NumPy.",
+            "input_code": "def function_16(A):\n    result = [[0] * len(A[0]) for _ in range(len(A))]\n    for i in range(len(A)):\n        for j in range(len(A[0])):\n            result[i][j] = -A[i][j]\n    return result\n"
+        }
+    ],
+    "function_prototype": {
+        "function_name": "function_16",
+        "parameters": [
+            {
+                "name": "A",
+                "type": "np.ndarray"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "np.ndarray"
+            }
+        ]
+    },
+    "tags": [
+        "Array",
+        "Negation",
+        "Vectorization"
+    ]
+}

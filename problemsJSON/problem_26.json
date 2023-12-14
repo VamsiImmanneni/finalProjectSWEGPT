@@ -1,0 +1,34 @@
+{
+    "identifier": "function_26",
+    "description": "Vectorized equivalent of column-wise sum excluding the first column of B.",
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Create the function's vectorized equivalent using NumPy.",
+            "input_code": "def function_26(A, B):\n    n = len(A)\n    result = []\n    for j in range(1, n):\n        sum_col = 0\n        for i in range(n):\n            sum_col += A[i][j] + B[i][j]\n        result.append(sum_col)\n    return result\n"
+        }
+    ],
+    "function_prototype": {
+        "function_name": "function_26",
+        "parameters": [
+            {
+                "name": "A",
+                "type": "np.ndarray"
+            },
+            {
+                "name": "B",
+                "type": "np.ndarray"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "np.ndarray"
+            }
+        ]
+    },
+    "tags": [
+        "Matrix",
+        "Column-wise Sum",
+        "Vectorization"
+    ]
+}

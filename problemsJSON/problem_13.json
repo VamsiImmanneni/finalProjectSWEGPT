@@ -1,0 +1,30 @@
+{
+    "identifier": "function_13",
+    "description": "Vectorized equivalent of checking if a matrix is square.",
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Create the function's vectorized equivalent using NumPy.",
+            "input_code": "def function_13(A):\n    return len(A) == len(A[0])\n"
+        }
+    ],
+    "function_prototype": {
+        "function_name": "function_13",
+        "parameters": [
+            {
+                "name": "A",
+                "type": "np.ndarray"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "bool"
+            }
+        ]
+    },
+    "tags": [
+        "Array",
+        "Square Matrix",
+        "Vectorization"
+    ]
+}

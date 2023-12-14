@@ -1,0 +1,34 @@
+{
+    "identifier": "function_35",
+    "description": "Vectorized equivalent of determining the maximum value in each row of A.",
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Create the function's vectorized equivalent using NumPy.",
+            "input_code": "def function_35(A, B):\n    n = len(A)\n    result = []\n    for i in range(n):\n        min_val = min(B[i])\n        max_val = min_val\n        for j in range(n):\n            if A[i][j] > max_val:\n                max_val = A[i][j]\n        result.append(max_val)\n    return result\n"
+        }
+    ],
+    "function_prototype": {
+        "function_name": "function_35",
+        "parameters": [
+            {
+                "name": "A",
+                "type": "np.ndarray"
+            },
+            {
+                "name": "B",
+                "type": "np.ndarray"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "np.ndarray"
+            }
+        ]
+    },
+    "tags": [
+        "Matrix",
+        "Maximum Value",
+        "Vectorization"
+    ]
+}

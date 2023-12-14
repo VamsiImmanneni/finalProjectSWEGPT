@@ -1,0 +1,34 @@
+{
+    "identifier": "function_27",
+    "description": "Vectorized equivalent of diagonal of A with alternating signs influenced by B.",
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Create the function's vectorized equivalent using NumPy.",
+            "input_code": "def function_27(A, B):\n    n = len(A)\n    result = []\n    for i in range(n):\n        element = A[i][i] if B[i][i] % 2 == 0 else -A[i][i]\n        result.append(element)\n    return result\n"
+        }
+    ],
+    "function_prototype": {
+        "function_name": "function_27",
+        "parameters": [
+            {
+                "name": "A",
+                "type": "np.ndarray"
+            },
+            {
+                "name": "B",
+                "type": "np.ndarray"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "np.ndarray"
+            }
+        ]
+    },
+    "tags": [
+        "Matrix",
+        "Diagonal",
+        "Vectorization"
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "identifier": "function_33",
+    "description": "Vectorized equivalent of element-wise division of A by B with an added value from A's row index.",
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Create the function's vectorized equivalent using NumPy.",
+            "input_code": "def function_33(A, B):\n    n = len(A)\n    result = []\n    for i in range(n):\n        row = []\n        for j in range(n):\n            divisor = B[i][j] if B[i][j] != 0 else 1\n            row.append(A[i][j] / divisor + i)\n        result.append(row)\n    return result\n"
+        }
+    ],
+    "function_prototype": {
+        "function_name": "function_33",
+        "parameters": [
+            {
+                "name": "A",
+                "type": "np.ndarray"
+            },
+            {
+                "name": "B",
+                "type": "np.ndarray"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "np.ndarray"
+            }
+        ]
+    },
+    "tags": [
+        "Matrix",
+        "Element-wise Division",
+        "Vectorization"
+    ]
+}

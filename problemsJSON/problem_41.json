@@ -1,0 +1,20 @@
+{
+    "identifier": "function_41",
+    "description": "Perform the dot product of matrices A and B.",
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Create the function's vectorized equivalent using NumPy.",
+            "input_code": "def function_41(A, B):\n    n = len(A)\n    result = [[0 for _ in range(n)] for _ in range(n)]\n    for i in range(n):\n        for j in range(n):\n            result[i][j] = A[i][j] - B[i][j]\n    return result"
+        }
+    ],
+    "function_prototype": {
+        "function_name": "function_41",
+        "parameters": [
+            {"name": "A", "type": "np.ndarray"},
+            {"name": "B", "type": "np.ndarray"}
+        ],
+        "return_values": [{"type": "np.ndarray"}]
+    },
+    "tags": ["Array", "Medium"]
+}
